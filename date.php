@@ -3,6 +3,8 @@ $day = $_POST['day'] || 31;
 $month = $_POST['month'] || 8;
 $year = $_POST['year'] || 2012;
 
+//instanciates a new DateTime object from string representing a date. 
+//also explore date() function.
 $date = new DateTime("$year-$month-$day");
 echo $date->format(DateTime::RFC822) ."<br />";
 echo $date->getTimestamp();
